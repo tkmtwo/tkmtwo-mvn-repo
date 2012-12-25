@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!--
+      mvn deploy:deploy-file -DpomFile=pom.xml -Dfile=log4j-nullapp-2.0.jar  -DrepositoryId=tkmtwo-gitlocal -Durl=file:/workspace-git/tkmtwo-mvn-repo/release
+  -->
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tkmtwo</groupId>
+  <artifactId>tkmtwo-nullappender</artifactId>
+  <version>2.0.0</version>
+  <description>Some null appender I pulled out of somewhere to "fix" ARApi logging.</description>
+  
+  <distributionManagement>
+    <repository>
+      <id>repo</id>
+      <url>https://github.com/tkmtwo/tkmtwo-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>https://github.com/tkmtwo/tkmtwo-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+</project>
